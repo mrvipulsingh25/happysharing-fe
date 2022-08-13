@@ -17,7 +17,7 @@ const toast = document.querySelector(".toast");
 const host = "https://happysharing-app.herokuapp.com/";
 const uploadUrl = host + "api/files";
 const emailUrl = host + "api/files/send";
-const maxAllowedSize = 10 * 1024 * 1024;
+const maxAllowedSize = 1000 * 1024 * 1024;
 dropZone.addEventListener("dragover", (e) => {
     e.preventDefault();
     if (!dropZone.classList.contains("dragged"))
